@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/snkrzs",
+      "handler": "snkrz.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/snkrzs/count",
+      "handler": "snkrz.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/snkrzs/:id",
+      "handler": "snkrz.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/snkrzs",
+      "handler": "snkrz.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/snkrzs/:id",
+      "handler": "snkrz.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/snkrzs/:id",
+      "handler": "snkrz.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

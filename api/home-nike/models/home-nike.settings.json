@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homeNikes",
+  "info": {
+    "name": "Home Nike",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Titulo": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "string"
+    },
+    "Stock": {
+      "type": "boolean"
+    }
+  }
+}

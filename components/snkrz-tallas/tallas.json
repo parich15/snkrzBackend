@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_snkrz_tallas_tallas",
+  "info": {
+    "name": "Tallas",
+    "icon": "cogs"
+  },
+  "options": {},
+  "attributes": {
+    "Tallas": {
+      "type": "enumeration",
+      "enum": [
+        "_40",
+        "_41",
+        "_42"
+      ]
+    }
+  }
+}

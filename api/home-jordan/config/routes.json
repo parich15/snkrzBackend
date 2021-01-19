@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/home-jordans",
+      "handler": "home-jordan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-jordans/count",
+      "handler": "home-jordan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-jordans/:id",
+      "handler": "home-jordan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/home-jordans",
+      "handler": "home-jordan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/home-jordans/:id",
+      "handler": "home-jordan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/home-jordans/:id",
+      "handler": "home-jordan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

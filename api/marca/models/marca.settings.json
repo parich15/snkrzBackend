@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marcas",
+  "info": {
+    "name": "Marca",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Marca": {
+      "type": "string",
+      "required": true
+    },
+    "snkrzs": {
+      "via": "marcas",
+      "collection": "snkrz",
+      "dominant": true
+    }
+  }
+}

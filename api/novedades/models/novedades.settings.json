@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "novedades",
+  "info": {
+    "name": "Novedades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Titulo": {
+      "type": "string"
+    },
+    "Texto": {
+      "type": "text"
+    },
+    "Enlace": {
+      "type": "string"
+    }
+  }
+}

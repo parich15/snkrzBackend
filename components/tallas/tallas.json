@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_tallas_tallas",
+  "info": {
+    "name": "Tallas",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Talla": {
+      "type": "float"
+    },
+    "Disponible": {
+      "type": "boolean"
+    }
+  }
+}

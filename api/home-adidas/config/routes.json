@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/home-adidas",
+      "handler": "home-adidas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-adidas/count",
+      "handler": "home-adidas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-adidas/:id",
+      "handler": "home-adidas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/home-adidas",
+      "handler": "home-adidas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/home-adidas/:id",
+      "handler": "home-adidas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/home-adidas/:id",
+      "handler": "home-adidas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

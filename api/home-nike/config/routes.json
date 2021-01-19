@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/home-nikes",
+      "handler": "home-nike.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-nikes/count",
+      "handler": "home-nike.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/home-nikes/:id",
+      "handler": "home-nike.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/home-nikes",
+      "handler": "home-nike.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/home-nikes/:id",
+      "handler": "home-nike.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/home-nikes/:id",
+      "handler": "home-nike.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "snkrzs",
+  "info": {
+    "name": "Snkrz",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Stock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Tallas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tallas.tallas"
+    },
+    "marcas": {
+      "collection": "marca",
+      "via": "snkrzs"
+    },
+    "Precio": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

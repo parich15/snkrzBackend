@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trendings",
+  "info": {
+    "name": "Trending",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "text",
+      "maxLength": 210,
+      "required": true
+    }
+  }
+}
